@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia Prado | Corte e barba em Goiânia</title>
+  <meta name="description" content="Barbearia Prado, no Setor Morada do Sol, em Goiânia. Corte na régua, barba e atendimento acolhedor. Agende seu horário online.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BarberShop","name":"Barbearia Prado","telephone":"+55 62 99567-4876","url":"https://pradobrb.com.br",
+   "address":{"@type":"PostalAddress","streetAddress":"Av. Oriente, 1129","addressLocality":"Goiânia","addressRegion":"GO","postalCode":"74473-823","addressCountry":"BR"},
+   "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"167"}}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <a class="logo" href="#inicio" aria-label="Barbearia Prado, início">Prado</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#agendar">Agendar</a>
+      <a href="#local">Como chegar</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="nota">4,9 no Google · 167 avaliações</p>
+        <h1>Corte na régua.<br>Barba impecável.</h1>
+        <p class="lead">Há mais de 12 anos cuidando do visual de Goiânia, num ambiente onde você se sente em casa.</p>
+        <div class="acoes">
+          <a class="btn" href="#agendar">Agendar horário</a>
+          <a class="btn btn-sec" href="#local">Como chegar</a>
+        </div>
+      </div>
+      <div class="poste" aria-hidden="true"></div>
+    </section>
+
+    <section id="servicos" class="secao">
+      <h2>Serviços</h2>
+      <p class="intro">Valores informados no atendimento ou pelo WhatsApp.</p>
+      <ul class="grade">
+        <li><h3>Corte de cabelo</h3><p>Tesoura ou máquina, sempre acabado na régua.</p></li>
+        <li><h3>Barba</h3><p>Modelagem com toalha quente e acabamento preciso.</p></li>
+        <li><h3>Corte e barba</h3><p>O combo completo, no mesmo horário.</p></li>
+        <li><h3>Corte infantil</h3><p>Atendimento paciente para os pequenos.</p></li>
+        <li><h3>Sobrancelha</h3><p>Limpeza e alinhamento discretos.</p></li>
+        <li><h3>Dicas de cuidado</h3><p>Você sai sabendo como manter o corte em casa.</p></li>
+      </ul>
+    </section>
+
+    <section id="equipe" class="secao escura">
+      <h2>Equipe</h2>
+      <p class="intro">Três barbeiros, um padrão. Todos elogiados pelos clientes por corte preciso e atendimento educado.</p>
+      <ul class="equipe">
+        <li><span class="avatar" aria-hidden="true">Y</span><h3>Yann</h3><p>Referência no atendimento ao público infantil.</p></li>
+        <li><span class="avatar" aria-hidden="true">B</span><h3>Barbeiro 2</h3><p>Substitua pelo nome e especialidade.</p></li>
+        <li><span class="avatar" aria-hidden="true">B</span><h3>Barbeiro 3</h3><p>Substitua pelo nome e especialidade.</p></li>
+      </ul>
+    </section>
+
+    <section id="avaliacoes" class="secao">
+      <h2>O que os clientes dizem</h2>
+      <p class="intro">Trechos de avaliações públicas no Google Maps.</p>
+      <div class="avals">
+        <blockquote><p>Corte sempre na régua, barba impecável, atendimento nota 1000. Aqui a gente se sente em casa.</p><cite>Ryan Dos Santos</cite></blockquote>
+        <blockquote><p>O profissional entendeu exatamente o que eu queria, fez um corte perfeito. Ambiente limpo e preço justo.</p><cite>Jonatas Borges da Silva</cite></blockquote>
+        <blockquote><p>Meu filho amou porque acertou o corte exatamente como ele queria. Toda a equipe tem educação e carinho.</p><cite>Tamy Cristina Rodrigues Da Silva</cite></blockquote>
+      </div>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&query=Barbearia+Prado+Goi%C3%A2nia" target="_blank" rel="noopener noreferrer">Ver todas as avaliações no Google</a>
+    </section>
+
+    <section id="agendar" class="secao escura">
+      <h2>Agendar horário</h2>
+      <p class="intro">Escolha o serviço e o horário. Ao enviar, abrimos o WhatsApp da barbearia com seu pedido pronto.</p>
+      <form id="formAgenda" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required minlength="3" maxlength="80">
+          <span class="erro" data-erro="nome"></span>
+        </div>
+        <div class="campo">
+          <label for="tel">Telefone com DDD</label>
+          <input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(62) 99999-9999" required>
+          <span class="erro" data-erro="tel"></span>
+        </div>
+        <div class="campo">
+          <label for="servico">Serviço</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione</option>
+            <option>Corte de cabelo</option><option>Barba</option><option>Corte e barba</option><option>Corte infantil</option><option>Sobrancelha</option>
+          </select>
+          <span class="erro" data-erro="servico"></span>
+        </div>
+        <div class="campo">
+          <label for="data">Data</label>
+          <input id="data" name="data" type="date" required>
+          <span class="erro" data-erro="data"></span>
+        </div>
+        <div class="campo cheio">
+          <label for="hora">Horário</label>
+          <select id="hora" name="hora" required><option value="">Escolha a data primeiro</option></select>
+          <span class="erro" data-erro="hora"></span>
+        </div>
+        <input class="hp" type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="campo cheio check">
+          <input id="aceite" type="checkbox" required>
+          <label for="aceite">Concordo em enviar meu nome e telefone à barbearia apenas para confirmar este agendamento. <a href="#" data-abrir="dlgPriv">Política de Privacidade</a></label>
+          <span class="erro" data-erro="aceite"></span>
+        </div>
+        <p class="aviso cheio">Não pedimos CPF para agendar: só coletamos o necessário.</p>
+        <button class="btn cheio" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="local" class="secao">
+      <h2>Como chegar</h2>
+      <div class="local">
+        <address>
+          Av. Oriente, 1129-1249<br>Setor Morada do Sol, Goiânia - GO<br>CEP 74473-823
+        </address>
+        <p>Telefone e WhatsApp: <a href="tel:+5562995674876">(62) 99567-4876</a></p>
+        <p>Funcionamento: fecha às 19h. Confirme os horários de cada dia pelo WhatsApp.</p>
+        <p>Espaço que acolhe a comunidade LGBTQ+ e empresa de empreendedoras.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Av.+Oriente+1129+Setor+Morada+do+Sol+Goi%C3%A2nia" target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Barbearia Prado. Todos os direitos reservados.</p>
+    <p class="links">
+      <a href="#" data-abrir="dlgPriv">Política de Privacidade</a>
+      <a href="#" data-abrir="dlgDireitos">Seus direitos (LGPD)</a>
+      <a href="#" id="abrirCookies">Preferências de cookies</a>
+    </p>
+  </footer>
+
+  <!-- Política de Privacidade -->
+  <dialog id="dlgPriv" aria-labelledby="tPriv">
+    <h2 id="tPriv">Política de Privacidade</h2>
+    <p>Em conformidade com a Lei nº 13.709/2018 (LGPD). Preencha os campos marcados antes de publicar.</p>
+    <ol>
+      <li><strong>Dados coletados:</strong> nome e telefone, apenas ao agendar. Não coletamos CPF.</li>
+      <li><strong>Finalidade:</strong> confirmar e organizar seu horário.</li>
+      <li><strong>Uso:</strong> contato sobre o agendamento. Não usamos seus dados para outras finalidades.</li>
+      <li><strong>Base legal:</strong> execução de serviço solicitado por você (art. 7º, V) e seu consentimento no formulário.</li>
+      <li><strong>Compartilhamento:</strong> não vendemos dados. O envio é feito pelo WhatsApp (Meta), que atua conforme sua própria política.</li>
+      <li><strong>Fornecedores:</strong> hospedagem do site e WhatsApp. [Liste aqui os fornecedores reais, como hospedagem e analytics.]</li>
+      <li><strong>Retenção:</strong> mantemos os dados apenas pelo tempo necessário ao atendimento ou a obrigações legais. [Defina o prazo.]</li>
+      <li><strong>Proteção:</strong> site em HTTPS, acesso restrito à equipe e nenhum dado pessoal em endereços (URLs).</li>
+      <li><strong>Seus direitos:</strong> acesso, correção, anonimização, bloqueio, eliminação, portabilidade, informação sobre compartilhamento e revogação do consentimento (art. 18).</li>
+      <li><strong>Contato do responsável:</strong> [nome do controlador, CNPJ e e-mail do encarregado], ou WhatsApp (62) 99567-4876.</li>
+    </ol>
+    <button class="btn" data-fechar>Fechar</button>
+  </dialog>
+
+  <!-- Direitos do titular -->
+  <dialog id="dlgDireitos" aria-labelledby="tDir">
+    <h2 id="tDir">Seus direitos sobre seus dados</h2>
+    <form id="formDireitos" novalidate>
+      <div class="campo">
+        <label for="dNome">Nome</label>
+        <input id="dNome" type="text" required>
+        <span class="erro" data-erro="dNome"></span>
+      </div>
+      <div class="campo">
+        <label for="dTipo">O que você precisa?</label>
+        <select id="dTipo" required>
+          <option value="">Selecione</option>
+          <option>Confirmar se tratam meus dados</option><option>Acessar meus dados</option><option>Corrigir meus dados</option>
+          <option>Anonimizar ou bloquear dados</option><option>Excluir meus dados</option><option>Saber com quem compartilham</option><option>Revogar meu consentimento</option>
+        </select>
+        <span class="erro" data-erro="dTipo"></span>
+      </div>
+      <p class="aviso">Algumas informações podem ser mantidas por obrigação legal. Responderemos em prazo razoável.</p>
+      <div class="linha">
+        <button class="btn" type="submit">Enviar pedido</button>
+        <button class="btn btn-sec" type="button" data-fechar>Cancelar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Cookies -->
+  <div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies" hidden>
+    <p>Usamos cookies essenciais para o site funcionar. Os demais só são ativados se você permitir.</p>
+    <div class="linha">
+      <button class="btn" id="cAceitar">Aceitar todos</button>
+      <button class="btn btn-sec" id="cRejeitar">Rejeitar não essenciais</button>
+      <button class="btn btn-sec" id="cPersonalizar">Personalizar</button>
+    </div>
+  </div>
+
+  <dialog id="dlgCookies" aria-labelledby="tCook">
+    <h2 id="tCook">Preferências de cookies</h2>
+    <form id="formCookies">
+      <label class="opcao"><input type="checkbox" checked disabled> Essenciais: necessários ao funcionamento. Sempre ativos.</label>
+      <label class="opcao"><input type="checkbox" id="ckPref"> Preferências: lembram escolhas feitas no site.</label>
+      <label class="opcao"><input type="checkbox" id="ckEst"> Estatísticos: mostram como o site é usado.</label>
+      <label class="opcao"><input type="checkbox" id="ckMkt"> Marketing: publicidade e rastreamento.</label>
+      <div class="linha">
+        <button class="btn" type="submit">Salvar escolhas</button>
+        <button class="btn btn-sec" type="button" data-fechar>Cancelar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
